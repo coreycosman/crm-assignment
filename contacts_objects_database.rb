@@ -14,4 +14,4 @@ contact_four =Contact.create(first_name: "contact", last_name: "four", email: "c
 # p Contact.contacts_reader
 # p Contact.find_contact(contact_one)
 # p contact_one.update
-p Contact.find_by
+# p Contact.find_by
