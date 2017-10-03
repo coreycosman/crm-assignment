@@ -31,6 +31,7 @@ class CRM
     when 3 then delete_contact
     when 4 then display_all_contacts
     when 5 then search_by_attribute
+    when 6 then exit_method
     end
   end
 
@@ -47,23 +48,31 @@ class CRM
   end
 
   def modify_existing_contact
-    p Contact.contacts_reader
     puts "enter the id of the contact to modify"
-    contact_name = gets.chomp
-    contact_name.update
+    id = gets.chomp
+    contact = Contact.find_contact(id)
+    contact.update
+    # p Contact.update
+
   end
 
   def delete_contact
-    delete
+    puts "enter id of contact to delete"
+    id = gets.chomp
+    contact = Contact.find_contact(id)
+    contact.delete(contact)
   end
 
   def display_all_contacts
-    Contact.contacts_reader
+    p Contact.contacts_reader
   end
 
   def search_by_attribute
-    Contact.find_by
+    p Contact.find_by
   end
 
+  def exit_method
+    exit
+  end
 
 end

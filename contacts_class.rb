@@ -23,10 +23,10 @@ class Contact
 
 # This method should accept an id as an argument
 # and return the contact who has that id
-  def self.find_contact(full_name)
-    @@contacts.each do |v|
-      if v = full_name
-        return full_name
+  def self.find_contact(id)
+    @@contacts.each do |contact|
+      if contact.id_reader == id.to_i
+      return contact
       end
     end
   end
@@ -111,8 +111,8 @@ class Contact
     attribute_reader
   end
  # This method should delete the contact
-  def delete
-    @@contacts.delete(self)
+  def delete(id)
+    @@contacts.delete(id)
   end
 
 
@@ -134,6 +134,10 @@ class Contact
     @note = str
   end
 #attribute readers
+  def id_reader
+    @id
+  end
+
   def first_name_reader
     @first_name
   end
