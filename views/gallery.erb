@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Welcome to the gallery</h1>
+    <% @images.each do |url| %>
+    <img src="<%= url %>">
+    <% end %>
+  </body>
+</html>
