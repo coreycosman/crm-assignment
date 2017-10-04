@@ -6,11 +6,11 @@
     <h1>Welcome to the Contacts Page</h1>
     <nav>
       <h2> Contacts </h2>
-      <ul>
+      <div>
         <% @contacts.each do |contact| %>
-        <li> <%= contact %> </li>
+        <div> <%= contact.full_name %> </div>
         <% end %>
-      </ul>
+      </div>
     </nav>
   </body>
 </html>

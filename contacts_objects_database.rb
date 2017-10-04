@@ -1,5 +1,7 @@
 require_relative("contacts_class_database.rb")
 
+Contact.destroy_all
+
 contact_one = Contact.create(first_name: "contact", last_name: "one", email: "contact_one@gmail.com", note: "this is contact one")
 contact_two = Contact.create(first_name: "contact", last_name: "two",  email: "contact_two@gmail.com", note: "this is contact two")
 contact_three = Contact.create(first_name: "contact", last_name: "three",  email: "contact_three@gmail.com", note: "this is contact three")

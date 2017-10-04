@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative("contacts_class_database")
 
 
-get '/home' do
+get '/' do
   erb(:index)
 end
 
@@ -19,8 +19,12 @@ get '/about_me' do
   @skills = ["git", "html", "css", "ruby"]
   erb(:about_me)
 end
-#learn now to iterate through database, and access the all method
+
 get '/contacts' do
-  @contacts = ActiveRecord::Base.each do |?|
+  @contacts = Contact.all
   erb(:contacts)
+end
+
+after do
+  ActiveRecord::Base.connection.close
 end
