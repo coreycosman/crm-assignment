@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.navbox {
+  background-color: grey;
+  color: white;
+}
+
+.contact_banner {
+  background-color: salmon;
+  color: black;
+}
+
+#underline5 {
+  text-decoration: bold;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+footer {
+ background-color: black;
+ color: white;
+}
