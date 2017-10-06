@@ -1,10 +1,31 @@
-<h1>Bitmaker CRM</h1>
-  <nav>
+<div class="top">
+  <h1>Bitmaker CRM</h1>
+</div>
+  <nav class="navbox_container">
     <ul>
-      <div class="navbox"><h3><a href="/">Home</a> </h3></div>
-      <div class="navbox"><h3><a href="#">Add a Contact</a> </h3></div>
-      <div class="navbox"><h3><a href="/gallery">Gallery</a></h3></div>
-      <div class="navbox"><h3><a href="/about_me">About Me</a></h3></div>
+      <div class="navbox">
+        <h3 class="top_text">
+          <a class="top_links" href="/">Home</a>
+        </h3>
+      </div>
+      <div class="navbox">
+        <h3 class="top_text">
+          <a class="top_links" href="#">Add a Contact
+          </a>
+        </h3>
+      </div>
+      <div class="navbox">
+        <h3 class="top_text">
+          <a class="top_links" href="/gallery">Gallery
+          </a>
+        </h3>
+      </div>
+      <div class="navbox">
+        <h3 class="top_text">
+          <a class="top_links" href="/about_me">About Me
+          </a>
+        </h3>
+      </div>
     </ul>
   </nav>
 
@@ -14,10 +35,10 @@
 
   <div>
     <% @contacts.each do |contact| %>
-    <div> <%= contact.full_name %>
+    <div class="contact_color"> <%= contact.full_name %>
         <aside>
-          <a href="#">Edit</a>
-          <a href="#">Delete</a>
+          <a class="unbold" href="#">Edit</a>
+          <a class="unbold" href="#">Delete</a>
         </aside>
     </div>
     <% end %>

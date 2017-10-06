@@ -5,24 +5,79 @@
 }
 
 
+.navbox_container {
+  background-color: white;
+}
+
 .navbox {
-  background-color: grey;
   color: white;
+  background-color: grey;
+  border: 8px solid white;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  left: -22px;
+  width: 102%;
+
+}
+
+.top_text {
+  margin: 0;
+
+}
+
+.top_links {
+  color: white;
+  text-decoration: none;
 }
 
 .contact_banner {
   background-color: salmon;
   color: black;
+  position: relative;
+  width: 547px;
+  left: 40px;
+  border-bottom: 12px solid white;
+  padding-left: 10px;
+  padding-top: 0.1px;
+  height: 60px;
 }
 
 #underline5 {
-  text-decoration: bold;
   text-decoration: underline;
+  text-decoration-color: aquamarine;
 }
 
 
+.contact_color {
+  background-color: aquamarine;
+  border-bottom: 12px solid white;
+  position: relative;
+  font-weight: bold;
+  width: 87%;
+  margin: 0 auto;
+  height: 75px;
 
+}
 
+#unbold {
+  font-weight: none;
+  font-size: 10px;
+}
+
+.top {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: 27px;
+  width: 96.2%;
+  left: 7px;
+  margin: 0 auto;
+
+}
 
 
 
