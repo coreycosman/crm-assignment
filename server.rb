@@ -25,6 +25,10 @@ get '/contacts' do
   erb(:contacts)
 end
 
+get '/contacts/:id' do
+      @contact = Contact.find(params[:id])
+      erb :show_contact
+end
 after do
   ActiveRecord::Base.connection.close
 end
