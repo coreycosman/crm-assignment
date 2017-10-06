@@ -33,6 +33,11 @@ get '/contacts/:id' do
     raise Sinatra::NotFound
   end
 end
+
+get '/new' do
+  erb :new
+end
+
 after do
   ActiveRecord::Base.connection.close
 end
