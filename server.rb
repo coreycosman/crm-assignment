@@ -26,7 +26,7 @@ get '/contacts' do
 end
 
 get '/contacts/:id' do
-  @contact = Contact.find(params[:id])
+  @contact = Contact.find_by(id: params[:id])
   if @contact
     erb :show_contact
   else
