@@ -26,8 +26,12 @@ get '/contacts' do
 end
 
 get '/contacts/:id' do
-      @contact = Contact.find(params[:id])
-      erb :show_contact
+  @contact = Contact.find(params[:id])
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 after do
   ActiveRecord::Base.connection.close
