@@ -6,11 +6,48 @@
     <title>Web App # 1!</title>
   </head>
   <body>
+    <div class="top">
+      <h1 id="top_margin">Bitmaker CRM</h1>
+    </div>
+      <nav class="navbox_container">
+        <ul id="nav_margin">
+          <div class="navbox">
+            <h3 id="top_text_home">
+              <a class="top_links" href="/">Home</a>
+            </h3>
+          </div>
+          <div class="navbox">
+            <h3 class="top_text">
+              <a class="top_links" href="/contacts">Contacts
+              </a>
+            </h3>
+          </div>
+          <div class="navbox">
+            <h3 class="top_text">
+              <a class="top_links" href="/new">Add a Contact
+              </a>
+            </h3>
+          </div>
+          <div class="navbox">
+            <h3 class="top_text">
+              <a class="top_links" href="/gallery">Gallery
+              </a>
+            </h3>
+          </div>
+          <div class="navbox">
+            <h3 class="top_text">
+              <a class="top_links" href="/about_me">About Me
+              </a>
+            </h3>
+          </div>
+        </ul>
+      </nav>
+
 
   <%= yield %>
 
     <footer>
-      <h6>© Bitmaker 2017</h6>
+      <h6 id="footer_text">© Bitmaker 2017</h6>
     </footer>
   </body>
 </html>

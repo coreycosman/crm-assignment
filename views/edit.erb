@@ -1,0 +1,20 @@
+
+
+  <section class="contact_banner">
+    <p id="banner_text"> There are <span id="underline5"><%=Contact.count%></span> contacts </p>
+  </section>
+
+  <div>
+    <% @contacts.each do |contact| %>
+    <div class="contact_color"> <%= contact.full_name %>
+        <aside>
+          <a class="unbold" href="/contacts/:id">Edit</a>
+          <a class="unbold" href="/show_contact">Delete</a>
+        </aside>
+    </div>
+    <% end %>
+  </div>
+
+
+<!--  how would i put each contact as a seprate section of the page?-->
+<!--how to link to other webpage?  -->
