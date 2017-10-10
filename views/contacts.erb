@@ -6,8 +6,11 @@
   <% @contacts.each do |contact| %>
   <div class="contact_color"> <%= contact.full_name %>
       <aside>
-        <a class="unbold" href='/contact/:id/edit'>Edit</a>
-        <a class="unbold" href="/show_contact">Delete</a>
+        <a class="unbold" href='/contacts/<%= contact.id %>/edit'>Edit</a>
+        <form action='/contacts/<%= contact.id %>' method='post'>
+          <input type='hidden' name='_method' value='delete'>
+          <input id="delete" type='submit' value="delete" >
+        </form>
       </aside>
   </div>
   <% end %>

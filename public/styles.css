@@ -101,6 +101,17 @@ margin: 0;
   color: blue;
 }
 
+#delete {
+  background: none;
+  border: none;
+  font-size: 12px;
+  text-decoration: underline;
+  color: blue;
+  position: relative;
+  left: 20px;
+  bottom: 17.7px;
+}
+
 
 footer {
  background-color: black;

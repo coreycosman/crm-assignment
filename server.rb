@@ -51,7 +51,7 @@ end
 get '/contacts/:id/edit' do
   @contact = Contact.find_by(id: params[:id])
   if @contact
-    erb :about_me
+    erb :edit_contact
   else
     raise Sinatra::NotFound
   end
@@ -72,7 +72,7 @@ put 'contacts/:id' do
   end
 end
 
-delete '/contacts/:id/' do
+delete '/contacts/:id' do
   @contact = Contact.find(params[:id])
   if @contact
     @contact.delete
